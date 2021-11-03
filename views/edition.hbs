@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        {{!-- GET --}}
+        <div class="col-md-3">
+            <h1>GET</h1>
+        </div>
+
+        {{!-- POST --}}
+
+        <div class="col-md-3">
+            <h1>POST</h1>
+        </div>
+
+        {{!-- PUT --}}
+
+        <div class="col-md-3">
+            <h1>PUT</h1>
+            <div class="card">
+                <div class="card-body">
+                     
+                    <form  method="POST" action="/{{_id}}?_method=PUT" method="POST">
+                        <div class="form-group">
+                            <label>title</label>
+                            <input class="form-control" type="text" name="title" value="{{title}}">
+                        </div>
+
+                        <div class="form-group">
+                            <label>content</label>
+                            <input class="form-control" type="text" name="content" value="{{content}}">
+                        </div>
+
+                        <div class="form-group">
+                            <label>price</label>
+                            <input class="form-control" type="text" name="price" value="{{price}}">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        {{!--DELETE  --}}
+
+        <div class="col-md-3">
+            <h1>DELETE</h1>
+            <div class="card">
+                <div class="card-body">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,26 @@
+{
+  "name": "restapp",
+  "version": "1.0.0",
+  "description": "sdf",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "algoliasearch": "^4.5.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.6",
+    "mongoose-algolia": "^1.10.1",
+    "multer": "^1.4.2",
+    "sharp": "^0.26.1"
+  },
+  "devDependencies": {
+    "handlebars": "^4.5.0"
+  }
+}

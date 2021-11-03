@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="row">
+        {{!-- GET --}}
+        <div class="col-md-3">
+            <h1>GET</h1>
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush"> 
+                        {{#each category}}                     
+                        <li class="list-group-item">                          
+                            {{this.title}}
+                        </li>  
+                        {{/each}}                     
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        {{!-- POST --}}
+
+        <div class="col-md-3">
+            <h1>POST</h1>
+            <div class="card">
+                <div class="card-body">
+
+                    <form method="POST" action="/category">
+                        <div class="form-group">
+                            <label>title</label>
+                            <input class="form-control" type="text" name="title">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        {{!-- PUT --}}
+
+        <div class="col-md-3">
+            <h1>PUT</h1>
+            <div class="card">
+                <div class="card-body">
+                   <ul class="list-group list-group-flush">
+                        {{#each product}}
+                        <li class="list-group-item"><a href="{{this.id}}">{{this.title}}</a></li>
+                        {{/each}}
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        {{!--DELETE  --}}
+
+        <div class="col-md-3">
+            <h1>DELETE</h1>
+            <div class="card">
+                <div class="card-body">
+
+                             <ul class="list-group list-group-flush">
+                                 {{#each product}}
+                                 <li class="list-group-item">
+                                     {{this.title}}
+                                     <form action="{{this._id}}/?_method=DELETE" method="post">
+                                         <button type="submit" class="btn btn-danger btn-sm">Effacer</button>
+                                     </form>
+                                 </li>
+                                 {{/each}}
+                             </ul>   
+
+                    <form action="/?_method=DELETE" method="POST">
+                        <div style="margin-top: 1rem">
+                            <button type="submit" class="btn btn-danger btn-sm">Effacer tout</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

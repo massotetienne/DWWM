@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        {{!-- get --}}
+        <div class="col-md-3">
+            <h1>GET</h1>
+
+            <form action="/search" method="post">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Search</label>
+                    <input type="search" class="form-control" name="q">
+                </div>
+            </form>
+            <div>
+                <h4>Résultat :</h4>
+                {{#each results}}
+                <a href="/{{this.objectID}}">{{this.title}}</a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
