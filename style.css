@@ -1,0 +1,429 @@
+/* DOCUMENTS INFORMATION
+    -thémes thé 
+    -version 1.0.0
+    -Etienne
+*/
+
+/* COLOR
+    
+    -default body text #eee
+    -h1                #eee
+    -h2                #000
+    -h3
+    
+    -botton
+    -button:hover
+
+    -icon              #darckgreen            
+    -border
+
+ /* FONTS  
+    
+    -default lato
+
+    -subtilte 
+    
+*/
+
+/* CSS directory
+
+    -1= GLOBAL
+    -2= HEADER
+    -3= PRODUITS
+ 
+ */
+
+/* GLOBAL 
+======================================*/
+html {
+    background-color: #fff;
+}
+
+/* attention voir pour enlever (letter jusqua word) */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lato', 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+
+h1 {
+    color: #eee;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+
+h2 {
+    color: black;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color:#000;
+    width: 100px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+
+}
+
+section {
+
+    padding: 30px 0 60px 0;
+}
+
+
+/* HEADER 
+/* ======================================= */
+/*voir (;) */
+header {
+    background-image: linear-gradient(rgba(245, 54, 7, 0.4), rgba(28, 29, 31, 0.6)), url(/ressourses/images/cover.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.home-title {
+    width: auto;
+    position: absolute;
+    top: 30%;
+}
+
+.home-title h1 {
+    font-size: 340%;
+    color: #000;
+
+}
+
+.home-title h1 span {
+    font-weight: 700;
+    color: red;
+
+}
+
+.home-title {
+    color: #fff;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+
+}
+
+.btn-full {
+    background-color: rgb(255, 240, 241);
+    color: rgba(8, 8, 8, 0.993);
+    margin-right: 15px;
+}
+
+.btn-ghost {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-full:hover {
+    background-color: rgb(241, 4, 4);
+    color: #fff;
+}
+
+.btn-ghost:hover {
+    background-color: rgb(5, 5, 5);
+    color: #fff;
+    border: rgb(241, 4, 4);
+
+
+}
+
+/* PRODUITS
+======================================= */
+
+.produits-plus {
+
+    margin: 20px 0;
+}
+
+.produits-plus:hover .produits-icon {
+    transform: translateX(20px);
+    color: rgb(252, 5, 17);
+}
+
+
+
+.produits-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produits-icon {
+    font-size: 34px;
+    color: rgb(7, 7, 7);
+    transition: all 1s;
+}
+
+/* FAMILLES THÉS
+ ====================================== */
+
+.famille-the {
+    background-color: rgb(206, 247, 179);
+}
+
+.famille-detail {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(202, 198, 198);
+}
+
+.famille-detail img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.famille-detail h4 {
+    text-align: center;
+}
+
+.the-noir {
+    background-color: rgba(43, 44, 40, 0.548);
+}
+
+.the-jaune {
+    background-color: rgb(240, 227, 112);
+}
+
+.the-vert {
+    background-color: rgba(143, 221, 112, 0.603);
+
+}
+
+/* GALERIES PHOTOS
+ ====================================== */
+
+.galeries-img {
+
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.galerie-titre {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.galerie-titre h4 {
+    color: #fff;
+
+}
+
+/* AVIS CLIENTS
+ ====================================== */
+
+.clients {
+     background-image: /*linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.6)), */
+        url(/ressourses/images/Avis-clients/Justin_Bonobo.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clients h2 {
+    color: #fff;
+
+}
+
+.clients h2::after {
+    background-color: #fff;
+}
+
+
+blockquote {
+    padding: 5px;
+    color: #fff;
+    font-style: italic;
+    line-height: 130%;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 800%;
+    font-family: "Sanchez", serif;
+    position: absolute;
+    top: 22px;
+    left: 5px;
+    color: rgba(245, 245, 248, 0.699);
+
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* NOS PACKS
+ ====================================== */
+
+.pack {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.pack h3 {
+
+    color: seagreen;
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -12px;
+    left: 2px;
+}
+.pack-gratuit {
+    background-color: rgb(173, 238, 173);
+    color: #fff;
+}
+.pack-premium {
+    background-color: rgb(96, 236, 96);
+    color: white;
+}
+
+.pack-title-premium {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: green;
+    padding: 5px;
+}
+
+.pack-elite {
+    background-color: yellowgreen;
+    color: white;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.pack-title p {
+    font-size: 110%;
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup {
+    text-align: center;
+}
+.pack-signup:hover .btn-pack {
+    background-color:#fff;
+    color: #000;
+
+
+}
+.btn-pack {
+    background-color: green;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* FORMULAIRES CONTACTS
+ ====================================== */
+
+ .contact-form {
+     margin: 30px;
+ }
+ 
+ .contact-message {
+width: 100%;
+
+ }
+
+ .btn-contact {
+    background-color: rgb(3, 3, 3);
+    color: white;
+    margin-bottom: 20px;
+ }
+ 
+ /* FOOTER
+ ====================================== */
+
+footer {
+    background-color: rgba(12, 12, 12, 0.801);
+    color:white;
+    height:60px;
+    text-align: center;
+    padding: 20px 20px;
+}
+.copyright a {
+color: white;
+}
+
+                                   
+
+ 
+ 
