@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerieart-triste</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- icon -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- bootstrap -->
+</head>
+
+<body style="background-image:url(/images/bgchiant.jpg);">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between
+        }
+    </style>
+    <!-- navbar -->
+    <nav class="fixed-top navbar navbar-expand-lg navbar-light p-3 mb-2 bg-primary text-white">
+        <a class=" navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/%20codehtml/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/%20codehtml/contact.html">Contacts</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/%20codehtml/login.html">login</a>
+                        <a class="dropdown-item" href="/%20codehtml/login.html#formreg">Inscription</a>
+                        <a class="dropdown-item" href="/%20codehtml/news.html">Mes Réalisations</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/%20codehtml/contact.html">Laissez votre message ici</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">BIDON!!!</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- navbar! -->
+
+    <!-- ************************************************************** -->
+
+    <!-- Default form login -->
+    <form class="container text-center border border-light mt-5 bg-primary" style="margin-top: 10vh !important;"
+        action="#!">
+
+        <p class="h4 mb-4">Sign in</p>
+
+        <!-- Email -->
+        <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+        <!-- Password -->
+        <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+        <div class="d-flex justify-content-around">
+            <div>
+                <!-- Remember me -->
+                <div class="custom-control custom-checkbox ">
+                    <input type="checkbox" class=" custom-control-input" id="defaultLoginFormRemember">
+                    <label class="custom-control-label " for="defaultLoginFormRemember">Remember me</label>
+                </div>
+            </div>
+            <div>
+                <!-- Forgot password -->
+                <a class="text-white" href="/%20codehtml/contact.html">Forgot password?</a>
+            </div>
+        </div>
+
+        <!-- Sign in button -->
+        <a class="btn btn  my-4 btn-dark" href="/%20codehtml/admin.html">
+            sing-in
+        </a>
+
+        <!-- Register -->
+        <p>Not a member?
+            <a href="#formreg" style="color: white;">Register</a>
+        </p>
+
+        <!-- Social login -->
+        <p>or sign in with:</p>
+
+        <a href="https://www.facebook.com" class="mx-2 bg-dark" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+        <a href="https://www.twitter.com" class="mx-2 bg-dark " role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+        <a href="https://www.instagram.com" class="mx-2 bg-dark " role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+        <a href="https://www.github.com" class="mx-2 bg-dark " role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+    </form>
+    <!-- Default form login -->
+
+    <!-- *************************************************************** -->
+
+    <!-- registrer -->
+    <!-- Default form register -->
+    <form id="formreg" class="container text-center border border-light p-5 bg-primary mt-4" action="#!">
+
+        <p class="h4 mb-4">Sign up</p>
+
+        <div class="form-row mb-4">
+            <div class="col">
+                <!-- First name -->
+                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+                <!-- Last name -->
+                <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+            </div>
+        </div>
+
+        <!-- E-mail -->
+        <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+        <!-- Password -->
+        <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password"
+            aria-describedby="defaultRegisterFormPasswordHelpBlock">
+        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text mb-4">
+            At least 8 characters and 1 digit
+        </small>
+
+        <!-- Phone number -->
+        <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number"
+            aria-describedby="defaultRegisterFormPhoneHelpBlock">
+        <small id="defaultRegisterFormPhoneHelpBlock" class="form-text  mb-4">
+            Optional - for two step authentication
+        </small>
+
+        <!-- Newsletter -->
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+            <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+        </div>
+
+        <!-- Sign up button -->
+        <button class="btn btn-info my-4 btn-block btn-dark" type="submit">Sign in</button>
+
+        <!-- Social register -->
+        <p>or sign up with:</p>
+
+        <a href="https://www.facebook.com" class="mx-2" role="button"><i class="bg-dark fab fa-facebook-f light-blue-text"></i></a>
+        <a href="https://www.twitter.com" class="mx-2" role="button"><i class="bg-dark fab fa-twitter light-blue-text"></i></a>
+        <a href="https://www.instagram.com" class="mx-2" role="button"><i class="bg-dark fab fa-linkedin-in light-blue-text"></i></a>
+        <a href="https://www.github.com" class="mx-2" role="button"><i class=" bg-dark fab fa-github light-blue-text"></i></a>
+
+        <hr>
+
+        <!-- Terms of service -->
+        <p>By clicking
+            <em>Sign up</em> you agree to our
+            <a class="text-white" href="" target="_blank">terms of service</a>
+
+    </form>
+    <!-- Default form register -->
+    <!-- registrer -->
+    <!-- *********************************************************************** -->
+
+
+    <!-- Footer -->
+    <footer class=" page-footer font-small bg-primary pt-4 mt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Footer</h5>
+                    <p>ce site est réaliser par Squallou , contactez le via le lien <a style="color:lawngreen;"
+                            href="www.dev-squallou.com">www.dev-squallou.com</a> </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Liens de navigation</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a style="color:white;" href="/%20codehtml/index.html">home</a>
+                        </li>
+                        <li>
+                            <a style="color:white;" href="/%20codehtml/login.html">login</a>
+                        </li>
+                        <li>
+                            <a style="color:white;" href="/%20codehtml/news.html">gallerie</a>
+                        </li>
+                        <li>
+                            <a style="color:white;" href="/%20codehtml/article-id.html">articles</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">sites utiles</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a style="color:white;" href="#!">www.peinturequality.com</a>
+                        </li>
+                        <li>
+                            <a style="color:white;" href="#!">www.pinceaux-raoul.fr</a>
+                        </li>
+                        <li>
+                            <a style="color:white;" href="#!">www.dev-squallou.com</a>
+                        </li>
+                        <li>
+                            <a style="color:white;" href="#!">lien inutile</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright: Squallou
+            <a href="https://mdbootstrap.com/"> Galeriedart-triste.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- *************************************************************************************** -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
