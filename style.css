@@ -1,0 +1,102 @@
+/*
+ * Css created by Etienne
+ * Année 2020
+ *************************/
+
+
+/*
+ * Body Default
+ ***************/
+body{margin:0;padding:0;background-color: grey;}
+a{text-decoration: none;text-decoration-style: none;color: inherit;}
+
+/*************************************/
+
+/*
+ * Background
+ ***************/
+.bg-blue 
+{ background-color: blue ;}
+.bg-green
+{background-color:black;}
+.bg-purple{
+background-color: rgb(250, 175, 250);
+}
+
+/*
+ * Text Color
+ ***************/
+
+.txt-white{color: white;}
+.txt-black{color: black;}
+
+
+/*
+ * Border
+ **********/
+
+.bdr-red{border:solid 2px red;border-width: 10px;}
+.bdr-black{border:solid 1px black;border-width: 5px;}
+/*
+ * Menu
+ ***************/
+
+.item {
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*
+ * Grid Body
+ ***************/
+ /* Sidebar */
+ #grid > .sidebar{grid-area: side;}
+ /* img1 */
+.images > .image1{grid-area:img1}
+/* img2 */
+.images > .image2{grid-area: img2}
+/* Galerry img */
+#grid > .gal-img{grid-area: gal}
+
+#grid > .alarach{grid-area: ala;}
+/* Mon tableau grid body */
+#grid{
+    display: grid;
+    grid-template-columns: 20% 40% 40% ;
+    grid-template-rows: 400px 400px 1fr 1fr;
+    grid-template-areas: "side img1 img2"  
+                         "side gal gal" 
+                         "side . ."  
+                         ". ala ."                      
+}
+
+
+/*
+ * Grid Gallery image
+ ********************/
+
+ .gal-img > .image1 {grid-area: gal-img1;}
+ .gal-img > .image2 {grid-area: gal-img2;}
+
+/* Mon tableau grid gal-img */
+#grid > .gal-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-template-areas: "gal-img1 gal-img2" 
+}
+/*
+ * Image
+ ********/
+/* .gal-img{
+    display: flex;
+    flex-direction: row;
+} */
+
+.img{height: 100%;width: 100%;}
+
+.parag{
+    text-align:center;
+}
