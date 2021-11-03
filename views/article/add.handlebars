@@ -1,0 +1,63 @@
+<section class="section">
+    <div class="container is-fullhd">
+        <form action="/articles/post" method="post" enctype="multipart/form-data">
+            <div class="field">
+                <label class="label">Titre de l'article</label>
+                <div class="control">
+                    <input class="input" type="text" name="title">
+                </div>
+            </div>
+
+
+
+            <div class="field">
+                <label class="label">Contenu</label>
+                <div class="control">
+                    <textarea class="textarea" name="content" id="content"></textarea>
+                   <script>
+                    const ed = CKEDITOR.replace('content', {
+                        entities: false
+                    })
+
+                    ed.on('change', function (e) {
+                        console.log('Value: ', e.editor.getData())
+                    })
+                </script>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">auteur</label>
+                <div class="control">
+                    <input class="input" type="text" name="author">
+                </div>
+            </div>
+
+            <div class="file">
+                <label class="file-label">
+                    <input class="file-input" type="file" name="image">
+                    <span class="file-cta">
+                        <span class="file-icon">
+                            <i class="fas fa-upload"></i>
+                        </span>
+                        <span class="file-label">
+                            Choose a file…
+                        </span>
+                    </span>
+                </label>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link"> Enregistrer</button>
+                </div>
+                <div class="control">
+                    <button class="button is text">Annuler</button>
+                </div>
+        </form>
+    </div>
+
+
+    </div>
+
+</section>

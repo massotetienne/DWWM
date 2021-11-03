@@ -1,0 +1,69 @@
+<div>
+
+    
+
+    <form action="/articles/edit/{{ articleID._id }}" method="post" enctype="multipart/form-data">
+        <div class="field">
+            <label class="label">Titre de l'article : </label>
+            <h1>{{ articleID.title }}</h1>
+            <div class="control">
+                <input class="input" type="text" name="title" value='{{ articleID.title }}'>
+            </div>
+        </div>
+
+       
+        <div class="field">
+            <label class="label">Contenu : </label>
+             <p>{{ articleID.content }}</p>
+            <div class="control">
+                <textarea class="textarea" name="content" id='content'></textarea>
+                <script>
+                    const ed = CKEDITOR.replace('content', {
+                        entities: false
+                    })
+
+                    ed.on('change', function (e) {
+                        console.log('Value: ', e.editor.getData())
+                    })
+                </script>
+            </div>
+        </div>
+      
+        <div class="field">
+            <label class="label">auteur : </label>
+              <h2>{{articleID.author}}</h2>
+            <div class="control">
+                <input class="input" type="text" name="author" value='{{ articleID.author }}'>
+            </div>
+        </div>
+        
+        <div class="file">
+            <label class="file-label">
+                <input class="file-input" type="file" name="image">
+                <img style="width:150px;height:150px" src="{{articleID.image}}" alt="">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                        Choose a file…
+                    </span>
+                </span>
+            </label>
+        </div>
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link"> Enregistrer</button>
+            </div>
+            <div class="control">
+                <button class="button is text">Annuler</button>
+            </div>
+    </form>
+    <form action="/articles/delete/{{ articleID._id}}" method="get" enctype="multipart/form-data">
+        <div class="control">
+            <button type="submit" class="button is text">Supprimer</button>
+        </div>
+    </form>
+
+</div>
