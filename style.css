@@ -1,0 +1,242 @@
+/* style css */
+/* created by Etienne 
+*
+*primary color:
+*secondary color:
+*
+*année 2020
+*
+**********************/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* Flex */
+
+.row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* card */
+
+.item {
+    padding: 5px;
+    margin: 5px;
+}
+
+/* grid area */
+#grid > header {
+    grid-area: head;
+}
+
+#grid > nav {
+    grid-area: nav;
+}
+
+#grid > form {
+    grid-area: form;
+}
+
+#grid > footer {
+    grid-area: foo;
+}
+
+#grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 20% 20% 10% 10% 20% 20%;
+    grid-template-rows: 7vh 200px 1fr 50px;
+
+    grid-template-areas: "nav nav nav nav nav nav"
+        "head head head head head head"
+        "form form form form form form"
+        "foo foo foo foo foo foo";
+}
+
+header > h1 {
+    grid-area: t-wel;
+}
+
+#grid > header {
+    display: grid;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". . ."
+        ". t-wel ."
+        ". . .";
+}
+
+nav > h2 {
+    grid-area: t-nav;
+}
+nav > ul {
+    grid-area: ul-nav;
+}
+
+
+
+form > h3 {
+    grid-area: t-form
+}
+
+form > .name {
+    grid-area: in-name
+}
+
+form > .mail {
+    grid-area: in-mail
+}
+
+form > input {
+    grid-area: t-suj
+}
+
+form > textarea {
+    grid-area: t-text
+}
+
+form > button {
+    grid-area: t-btn
+}
+
+#grid > form {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    grid-template-areas: ". . t-form t-form . ."
+        ". . in-name  in-mail . ."
+        ". . t-suj t-suj . ."
+        ". . t-text t-text . ."
+        ". . t-btn t-btn . ."
+    ;
+}
+
+/* Text-color */
+/* ************************************************** */
+.txt-green {
+    color: green
+}
+
+.txt-red {
+    color: red
+}
+
+.txt-blue {
+    color: blue
+}
+
+.txt-yellow {
+    color: yellow
+}
+
+.txt-purple {
+    color: rgba(128, 0, 128, 1)
+}
+
+.txt-cyan {
+    color: cyan
+}
+
+.txt-white {
+    color: white
+}
+
+/* ************************************************** */
+/* /Text-color */
+
+
+/* Border */
+/* ************************************************** */
+.br-green {
+    border: solid 2px green
+}
+
+.br-red {
+    border: solid 2px red
+}
+
+.br-blue {
+    border: solid 2px blue
+}
+
+.br-yellow {
+    border: solid 2px yellow
+}
+
+.br-purple {
+    border: solid 2px rgba(128, 0, 128, 1)
+}
+
+.br-cyan {
+    border: solid 2px cyan
+}
+
+.br-white {
+    border: solid 2px white
+}
+
+.br-black {
+    border: solid 2px black
+}
+
+/* ************************************************** */
+/* /Border */
+
+
+/* Background */
+/* ************************************************** */
+.bg-green {
+    background-color: green
+}
+
+.bg-red {
+    background-color: red
+}
+
+.bg-blue {
+    background-color: blue
+}
+
+.bg-yellow {
+    background-color: yellow
+}
+
+.bg-purple {
+    background-color: rgba(128, 0, 128, 0.8)
+}
+
+.bg-cyan {
+    background-color: cyan
+}
+
+.bg-pink {
+    background-color: pink
+}
+
+.bg-white {
+    background-color: white
+}
+
+.bg-rosybrown {
+    background-color: rosybrown
+}
+
+/* / Background */
+/* ************************************************** */
